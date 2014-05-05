@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 MAY 2014 13:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 MAY 2014 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -307,33 +307,28 @@ File: camera.png Graphic file (type png)
  <use camera.png>
 Package pdftex.def Info: camera.png used on input line 81.
 (pdftex.def)             Requested size: 226.79846pt x 116.25217pt.
-
-<participants.png, id=11, 602.25pt x 602.25pt>
+ [2 <./camera.png>] <participants.png, id=16, 602.25pt x 602.25pt>
 File: participants.png Graphic file (type png)
  <use participants.png>
-Package pdftex.def Info: participants.png used on input line 109.
+Package pdftex.def Info: participants.png used on input line 114.
 (pdftex.def)             Requested size: 226.79846pt x 226.7989pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <./camera.png>]
-Overfull \hbox (1.00613pt too wide) in paragraph at lines 117--119
+Overfull \hbox (1.00613pt too wide) in paragraph at lines 122--124
 \T1/aer/m/n/9 God-speed Ques-tion-aire [4] with re-spect to their hu-man team-
  []
 
 
-Overfull \hbox (1.3748pt too wide) in paragraph at lines 134--135
+Overfull \hbox (1.3748pt too wide) in paragraph at lines 139--140
 \T1/aer/m/n/9 The par-tic-i-pant re-sponses were post-ordered such that higher
  []
 
-
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 155--160
+[3 <./participants.png (PNG copy)>]
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 160--165
  [][] 
  []
 
-[3 <./participants.png (PNG copy)>]
-Overfull \hbox (8.54546pt too wide) in paragraph at lines 193--198
+
+Overfull \hbox (8.54546pt too wide) in paragraph at lines 198--203
  [][] 
  []
 
@@ -341,10 +336,10 @@ Overfull \hbox (8.54546pt too wide) in paragraph at lines 193--198
 
 ] (./teambuilding.aux) ) 
 Here is how much of TeX's memory you used:
- 2802 strings out of 493315
- 35883 string characters out of 6137904
- 104096 words of memory out of 5000000
- 6192 multiletter control sequences out of 15000+600000
+ 2803 strings out of 493315
+ 35918 string characters out of 6137904
+ 104106 words of memory out of 5000000
+ 6193 multiletter control sequences out of 15000+600000
  44832 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,10n,28p,1045b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -355,7 +350,7 @@ pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
 b></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr
 /local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on teambuilding.pdf (6 pages, 2121816 bytes).
+Output written on teambuilding.pdf (6 pages, 2123393 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream

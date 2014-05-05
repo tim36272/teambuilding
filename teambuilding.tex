@@ -86,10 +86,13 @@ We investigate the interactions between a heterogeneous team of two humans and r
 \section{Experimental Methodology}
 \label{experimental-methodology}
 The experiment is designed to represent a simple task in which teamwork between humans and a robot would increase the probability of the task's success compared to the humans working alone. This is meant to be representative of many real-world activities requiring human and robot teamwork. In this task, the team consisting of two humans and one robot are instructed to locate a particular object in a large room (Figure~\ref{fig:studylocation}). The participants are told the robot is capable of detecting when it can ``see'' the object with its camera, and thus the robot will be able to help find the object. Participants are subject to a time limit, increasing the difficulty of finding the object.
+
 \subsection{Materials and Setup}
-The Adept MobileRobotics Pioneer 3DX shown in figure [figure number for picture of robot] is used as the robotic base for the experiment. It is equipped with a SICK LMS 100 Laser Rangefinding for navigation, an Xtion Pro Live for detecting the object it is looking for, and additional computational components. The robot is controlled from a separate computer in a different room by a human (participants are unaware of this Wizard of Oz usage: they are led to believe the robot is navigating autonomously).
+The Adept MobileRobotics Pioneer 3DX shown in figure [figure number for picture of robot] is used as the robotic base for the experiment. It is equipped with a SICK LMS 100 Laser Rangefinding for navigation, an Xtion Pro Live for detecting the object it is looking for, and additional computational components. A laptop running the Robot Operating System and laser processing is mounted on the Pioneer. The robot's onboard Raspberry Pi is controlled from a separate computer in a different room by a human (participants are unaware of this Wizard of Oz usage: they are led to believe the robot is navigating autonomously).
 
 The room is a large library study room, set up to be sufficiently cluttered that finding an object takes some time. The object used is a blue whiteboard marker, chosen because it is easily concealable but also easily recognizable to both the humans and the robot's camera due to its bright color. The object is hidden such that the robot would be able to see it.
+
+A Macbook Pro webcam was used to record audio and video for the duration of the study. 
 \subsection{Team building activity}
 \label{section:team-building-activity}
 Some participants partake in a team building activity with the robot. This activity is the popular ``Two Truths and One Lie'' icebreaker. Each participant tells the group two truths and one lie about themselves, then their human teammate and the robot guess which statement was a lie, in that order. Unknown to participants, the remote human operator actually just plays a sound clip from the robot's onboard speaker which states ``I believe your second/third statement was a lie'' for the first and second human teammate, respectively, regardless of their statements. Finally, the remote operator plays a sound clip on the robot which states its two truths and a lie:
@@ -99,6 +102,8 @@ Some participants partake in a team building activity with the robot. This activ
  \item I can travel up to two meters per second (lie)
 \end{itemize}
 Participants then guess which statement was a lie, and the remote operator plays a sound clip stating ``I can only travel one meter per second''. The team building activity is now concluded.
+
+The facilitator within the room gestures at each participant when it is their turn to speak (both humans and the robot). The remote operator can see the facilitator gesture on the video feed, which is used as the cue for each sound clip to play.
 
 Note that we avoid anthropomorphizing the robot because this study does not focus on human-like robots. The voice used in every audio clip is a very ``machine-like'' voice.
 \subsection{Primary activity}
@@ -123,7 +128,7 @@ Half of the participants partake in the team building activity described in Sect
  \item Impossible task without team building activity
 \end{itemize}
 
-Figure ~\ref{fig:participantdistro} contains a graphic describing the distribution of participants among the cells. 
+Figure~\ref{fig:participantdistro} contains a graphic describing the distribution of participants among the cells. 
 
 After finishing the primary activity, participants are separated again and asked to fill out the same Godspeed questionnaire for their human teammate and again for their robotic teammate. After finishing the questionnaire participants are debriefed and dismissed. The facilitator uses a script throughout the experiment, but is allowed to respond to participant questions. 
 
@@ -239,6 +244,12 @@ The other participants simply observed the robot's actions and did not try to in
 Participants may have an inflated opinion of the robot's abilities due to the robot's high rate of success in the Two Truths and One Lie game. Almost all participants placed their lie in the second or third statement. Since the robot always guessed that the second statement was a lie for the first player in the game and that the third statement was a lie for the second player in the game, the robot guessed successfully as often as the other human participant. 
 
 The only cases where the robot did not seem to be fully competent during the team building exercise was when a participant would use an observable truth (hair color, weather, etc.) in their statements. 
+
+\subsection{Technical Difficulties}
+\label{subsection:technical-difficulties}
+In two runs of the study, a mistake was made by either the facilitator or the remote operator. Once, the robot did not ``locate'' the blue marker when it was placed in front of its PrimeSense sensor. This failure was due to the batteries dying on the robot laptop. The facilitator was clear to emphasize that he was to blame for the robot losing its charge and replaced the laptop with another, fully charged laptop. 
+
+A second failure occurred the remote operator missed the cue to activate the text-to-speech. This was again blamed on the humans running the study for not ``starting the robot.'' In this way, any errors were clearly attributed to the individuals running the study, and not the robot itself in order to prevent the participants' perceptions of the robot from changing in a noticeable way. 
 
 \section{Limitations and Further Work}
 \label{section:limitations-and-further-work}
