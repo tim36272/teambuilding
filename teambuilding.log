@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 MAY 2014 13:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 MAY 2014 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -307,53 +307,66 @@ File: camera.png Graphic file (type png)
  <use camera.png>
 Package pdftex.def Info: camera.png used on input line 81.
 (pdftex.def)             Requested size: 226.79846pt x 116.25217pt.
- [2 <./camera.png>] <participants.png, id=16, 602.25pt x 602.25pt>
+
+<robot.png, id=11, 1943.26pt x 2601.72pt>
+File: robot.png Graphic file (type png)
+ <use robot.png>
+Package pdftex.def Info: robot.png used on input line 91.
+(pdftex.def)             Requested size: 226.79846pt x 303.61795pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./camera.png> <./robot.png (PNG copy)>]
+<participants.png, id=17, 602.25pt x 602.25pt>
 File: participants.png Graphic file (type png)
  <use participants.png>
-Package pdftex.def Info: participants.png used on input line 114.
+Package pdftex.def Info: participants.png used on input line 120.
 (pdftex.def)             Requested size: 226.79846pt x 226.7989pt.
 
-Overfull \hbox (1.00613pt too wide) in paragraph at lines 122--124
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (1.00613pt too wide) in paragraph at lines 128--130
 \T1/aer/m/n/9 God-speed Ques-tion-aire [4] with re-spect to their hu-man team-
  []
 
 
-Overfull \hbox (1.3748pt too wide) in paragraph at lines 139--140
+Overfull \hbox (1.3748pt too wide) in paragraph at lines 145--146
 \T1/aer/m/n/9 The par-tic-i-pant re-sponses were post-ordered such that higher
  []
 
 [3 <./participants.png (PNG copy)>]
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 160--165
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 165--170
  [][] 
  []
 
 
-Overfull \hbox (8.54546pt too wide) in paragraph at lines 198--203
+Overfull \hbox (8.54546pt too wide) in paragraph at lines 203--208
  [][] 
  []
 
-[4] [5] [6
-
-] (./teambuilding.aux) ) 
+[4] [5] [6] (./teambuilding.aux) ) 
 Here is how much of TeX's memory you used:
- 2803 strings out of 493315
- 35918 string characters out of 6137904
- 104106 words of memory out of 5000000
- 6193 multiletter control sequences out of 15000+600000
+ 2809 strings out of 493315
+ 35993 string characters out of 6137904
+ 105114 words of memory out of 5000000
+ 6198 multiletter control sequences out of 15000+600000
  44832 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,10n,28p,1045b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/bas
-e/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.
-pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on teambuilding.pdf (6 pages, 2123393 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc
+/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+Output written on teambuilding.pdf (6 pages, 6817860 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

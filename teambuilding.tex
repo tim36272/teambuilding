@@ -87,8 +87,14 @@ We investigate the interactions between a heterogeneous team of two humans and r
 \label{experimental-methodology}
 The experiment is designed to represent a simple task in which teamwork between humans and a robot would increase the probability of the task's success compared to the humans working alone. This is meant to be representative of many real-world activities requiring human and robot teamwork. In this task, the team consisting of two humans and one robot are instructed to locate a particular object in a large room (Figure~\ref{fig:studylocation}). The participants are told the robot is capable of detecting when it can ``see'' the object with its camera, and thus the robot will be able to help find the object. Participants are subject to a time limit, increasing the difficulty of finding the object.
 
+\begin{figure}[here]
+\includegraphics[width=0.45\textwidth]{robot.png}
+\caption{The robot with the attached laptop, SICK laser, router, and speaker.}
+\label{fig:robot}
+\end{figure}
+
 \subsection{Materials and Setup}
-The Adept MobileRobotics Pioneer 3DX shown in figure [figure number for picture of robot] is used as the robotic base for the experiment. It is equipped with a SICK LMS 100 Laser Rangefinding for navigation, an Xtion Pro Live for detecting the object it is looking for, and additional computational components. A laptop running the Robot Operating System and laser processing is mounted on the Pioneer. The robot's onboard Raspberry Pi is controlled from a separate computer in a different room by a human (participants are unaware of this Wizard of Oz usage: they are led to believe the robot is navigating autonomously).
+The Adept MobileRobotics Pioneer 3DX shown in Figure~\ref{fig:robot} is used as the robotic base for the experiment. It is equipped with a SICK LMS 100 Laser Rangefinding for navigation, an Xtion Pro Live for detecting the object it is looking for, and additional computational components. A laptop running the Robot Operating System and laser processing is mounted on the Pioneer. The robot's onboard Raspberry Pi is controlled from a separate computer in a different room by a human (participants are unaware of this Wizard of Oz usage: they are led to believe the robot is navigating autonomously).
 
 The room is a large library study room, set up to be sufficiently cluttered that finding an object takes some time. The object used is a blue whiteboard marker, chosen because it is easily concealable but also easily recognizable to both the humans and the robot's camera due to its bright color. The object is hidden such that the robot would be able to see it.
 
@@ -140,7 +146,6 @@ The participant responses were post-ordered such that higher numbered scores ind
 
 \subsection{Subjective Data Collection:}
 The facilitators wrote descriptions about any unexpected occurences within the study. Video of some sessions were reviewed to provide additional insight into certain participant interactions. These observations include any non-scripted facilitator-human or facilitator-robot interactions. 
-
 
 \section{Results}
 \label{section:results}
@@ -263,9 +268,11 @@ In this study, the participant's state is uknown. A third part of each study cou
 
 ``Two Truths and One Lie'' seemed to be an effective team building activity with only a few exceptions. One participant struggled for about 30 seconds to come up with three statements. Even with the struggling, the participant did not have any significant difference in his or her responses. The activity went smoothly for the rest of the participants. However, if team building is going to be used regularly for heterogeneous teams, it is important to investigate other activities and how they can be applied to robots. In our literature review, we were unable to find scientific comparisons of different team building activities for human-only groups. Comparing multiple team building activities could reveal differences in effectiveness in different activities with respect to heterogeneous groups.
 
+More statistical analysis could also be performed to analyze the data collected. Using analysis of variance could show how our data is partitioned mathematically, which should support our hypotheses and the conclusions reached in this paper.
+
 \section{Conclusions}
 \label{section:conclusions}
-Human robot interactions will undoubtably increase as the field of robotics advances. The use of heterogeneous groups of humans and robots will most likely increase over time as well. Since team building is viewed as an acceptable social activity to create cohesive groups of humans, team building with heterogeneous groups of robots and humans is a natural step forward. We show that humans tend to perceive robots better after team building activities than before. This trend is much stronger than the slight increase in perception of human partners after team building. Anecdotal observations and analysis of the data raise several important questions that should be addressed in the future.  
+Human robot interactions will undoubtably increase as the field of robotics advances. The use of heterogeneous groups of humans and robots will most likely increase over time as well. Since team building is viewed as an acceptable social activity to create cohesive groups of humans, team building with heterogeneous groups of robots and humans is a natural step forward. We show that humans tend to perceive robots better after team building activities than before. This trend is much stronger than the slight increase in perception of human partners after team building. Anecdotal observations and analysis of the data raise several important questions that should be addressed in the future. 
 
 
 %ACKNOWLEDGMENTS are optional
