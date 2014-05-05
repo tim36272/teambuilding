@@ -1,76 +1,11 @@
-% THIS IS SIGPROC-SP.TEX - VERSION 3.1
-% WORKS WITH V3.2SP OF ACM_PROC_ARTICLE-SP.CLS
-% APRIL 2009
-%
-% It is an example file showing how to use the 'acm_proc_article-sp.cls' V3.2SP
-% LaTeX2e document class file for Conference Proceedings submissions.
-% ----------------------------------------------------------------------------------------------------------------
-% This .tex file (and associated .cls V3.2SP) *DOES NOT* produce:
-%       1) The Permission Statement
-%       2) The Conference (location) Info information
-%       3) The Copyright Line with ACM data
-%       4) Page numbering
-% ---------------------------------------------------------------------------------------------------------------
-% It is an example which *does* use the .bib file (from which the .bbl file
-% is produced).
-% REMEMBER HOWEVER: After having produced the .bbl file,
-% and prior to final submission,
-% you need to 'insert'  your .bbl file into your source .tex file so as to provide
-% ONE 'self-contained' source file.
-%
-% Questions regarding SIGS should be sent to
-% Adrienne Griscti ---> griscti@acm.org
-%
-% Questions/suggestions regarding the guidelines, .tex and .cls files, etc. to
-% Gerald Murray ---> murray@hq.acm.org
-%
-% For tracking purposes - this is V3.1SP - APRIL 2009
-
 \documentclass{acm_proc_article-sp}
 
 \begin{document}
 
-\title{Teambuilding in Heterogeneous Groups of Humans and Robots}
-%
-% You need the command \numberofauthors to handle the 'placement
-% and alignment' of the authors beneath the title.
-%
-% For aesthetic reasons, we recommend 'three authors at a time'
-% i.e. three 'name/affiliation blocks' be placed beneath the title.
-%
-% NOTE: You are NOT restricted in how many 'rows' of
-% "name/affiliations" may appear. We just ask that you restrict
-% the number of 'columns' to three.
-%
-% Because of the available 'opening page real-estate'
-% we ask you to refrain from putting more than six authors
-% (two rows with three columns) beneath the article title.
-% More than six makes the first-page appear very cluttered indeed.
-%
-% Use the \alignauthor commands to handle the names
-% and affiliations for an 'aesthetic maximum' of six authors.
-% Add names, affiliations, addresses for
-% the seventh etc. author(s) as the argument for the
-% \additionalauthors command.
-% These 'additional authors' will be output/set for you
-% without further effort on your part as the last section in
-% the body of your article BEFORE References or any Appendices.
+\title{Team building in Heterogeneous Groups of Humans and Robots}
 
-\numberofauthors{3} %  in this sample file, there are a *total*
-% of EIGHT authors. SIX appear on the 'first-page' (for formatting
-% reasons) and the remaining two appear in the \additionalauthors section.
-%
+\numberofauthors{3} %
 \author{
-% You can go ahead and credit any number of authors here,
-% e.g. one 'row of three' or two rows (consisting of one row of three
-% and a second row of one, two or three).
-%
-% The command \alignauthor (no curly braces needed) should
-% precede each author name, affiliation/snail-mail address and
-% e-mail address. Additionally, tag each line of
-% affiliation/address with \affaddr, and tag the
-% e-mail address with \email.
-%
 % 1st. author
 \alignauthor
 Jared Rhizor\\
@@ -96,9 +31,9 @@ David Feil-Seifer\\
 
 \maketitle
 \begin{abstract}
-Humans often engage in team building activities to improve cooperation between team members and promote positive group identity. As the field of robotics develops, humans will be required to work cooperatively with robots on many group tasks. In this paper, we explore the effect of teambuilding activities on a group consisting of three agents: two human participants and one robot. The teambuilding and primary tasks are chosen to be simple, generic, and representative of the kinds of collaborative activities heterogeneous robot and human teams might have to do.
+Humans often engage in team building activities to improve cooperation between team members and promote positive group identity. As the field of robotics develops, humans will be required to work cooperatively with robots on many group tasks. In this paper, we explore the effect of team building activities on a group consisting of three agents: two human participants and one robot. The team building and primary tasks are chosen to be simple, generic, and representative of the kinds of collaborative activities heterogeneous robot and human teams might have to do.
 
-We find that humans' perceptions of robots significantly improves after performing teambuilding activities, and conclude that heterogeneous teams of humans and robots may be more successful at their tasks if they first perform teambuilding activities.
+We find that humans' perceptions of robots significantly improves after performing team building activities, and conclude that heterogeneous teams of humans and robots may be more successful at their tasks if they first perform team building activities.
 \end{abstract}
 
 %Tim doesn't know what these sections are suppose to be so he commented them out
@@ -109,55 +44,68 @@ We find that humans' perceptions of robots significantly improves after performi
 
 %\terms{Collaboration}
 
-\keywords{Teambuilding, collaboration}
+\keywords{Team building, collaboration}
 
 \section{Introduction}
-Humans often engage in team building activities to improve cooperation between team members and promote positive group identity. For example, [Rivas] reviewed current team building activities and determined that they provided "a sense of unity and cohesiveness" which improved the function of teams.
+\label{introduction}
+Humans often engage in team building activities to improve cooperation between team members and promote positive group identity. For example, \cite{Rivas} reviewed current team building activities and determined that they provided "a sense of unity and cohesiveness" which improved the function of teams.
 
-As the field of robotics develops, humans will be required to work cooperatively with robots on many group tasks. Some researchers have been exploring a variety of aspects of human-robot teamwork, ranging from how a robot should navigate [Feil-Seifer] to dialogue structuring [Fong]. 
+As the field of robotics develops, humans will be required to work cooperatively with robots on many group tasks. Some researchers have been exploring a variety of aspects of human-robot teamwork, ranging from how a robot should navigate \cite{Feil-Seifer} to dialogue structuring \cite{Fong}. 
 
 When groups work together it is important to promote a collaborative atmosphere between all group members, including mixed groups of humans and robots. Team building is a tool regularly used to promote this collaborative atmosphere. Including robots in team building exercises extends human group interactions to human and robot group interactions. Our study investigates the introduction of team building into a group consisting of two humans and a robot.
 
-The rest of this paper is organized as follows. Section 2 presents previous related work to robot and human teambuilding. Section 3 presents our experimental methodology. Sections 4 and 5 present an objective evaluation and subjective evaluation of our experiment results, respectively. Section 6 presents a complete view of the results of our study. Section 7 presents a discussion of the significance of our results. Section 8 presents the limitations of our study and possible further research based on our experiment. The paper is concluded in Section 9.
-
+The rest of this paper is organized as follows. Section \ref{section:related-work} presents previous related work to robot and human team building. Section \ref{section:aim-of-the-experiment} presents our hypothesis. Section \ref{experimental-methodology} presents our experimental methodology. Sections \ref{section:objective-evaluation} and \ref{section:subjective-analysis} present an objective evaluation and subjective evaluation of our experiment results, respectively. Section \ref{section:results} presents a complete view of the results of our study. Section \ref{section:discussion} presents a discussion of the significance of our results. Section \ref{section:limitations-and-further-work} presents the limitations of our study and possible further research based on our experiment. The paper is concluded in Section \ref{section:conclusions}.
 \section{Related Work}
+\label{section:related-work}
+\section{Aim of the experiment}
+\label{section:aim-of-the-experiment}
+We investigate the interactions between a heterogeneous team of two humans and robot performing one or two simple tasks. The tasks are a team building game, specifically the popular ``Two Truths and One Lie'', and the primary object finding task. Through the experiment we seek to evaluate the following hypotheses:
+\begin{itemize}
+ \item \textbf{H1} A human's perception of a robot will improve after participating in team building with the robot
+ \item \textbf{H2} The human unsuccessful at the primary task will perceive the robot better than a human successful at the primary task will perceive the unsuccessful human.
+\end{itemize}
+
 \section{Experimental Methodology}
+\label{experimental-methodology}
 The experiment is designed to represent a simple task in which teamwork between humans and a robot would increase the probability of the task's success compared to the humans working alone. This is meant to be representative of many real-world activities requiring human and robot teamwork. In this task, the team consisting of two humans and one robot are instructed to locate a particular object in a large room. The participants are told the robot is capable of detecting when it can ``see'' the object with its camera, and thus the robot will be able to help find the object. Participants are subject to a time limit, increasing the difficulty of finding the object.
 \subsection{Materials and Setup}
 The Adept MobileRobotics Pioneer 3DX shown in figure [figure number for picture of robot] is used as the robotic base for the experiment. It is equipped with a SICK LMS 100 Laser Rangefinding for navigation, an Xtion Pro Live for detecting the object it is looking for, and additional computational components. The robot is controlled from a separate computer in a different room by a human (participants are unaware of this Wizard of Oz usage: they are led to believe the robot is navigating autonomously).
 
 The room is a large library study room, set up to be sufficiently cluttered that finding an object takes some time. The object used is a blue whiteboard marker, chosen because it is easily concealable but also easily recognizable to both the humans and the robot's camera due to its bright color. The object is hidden such that the robot would be able to see it.
-\subsection{Teambuilding activity}
+\subsection{Team building activity}
+\label{section:team-building-activity}
 Some participants partake in a team building activity with the robot. This activity is the popular ``Two Truths and One Lie'' icebreaker. Each participant tells the group two truths and one lie about themselves, then their human teammate and the robot guess which statement was a lie, in that order. Unknown to participants, the remote human operator actually just plays a sound clip from the robot's onboard speaker which states ``I believe your second/third statement was a lie'' for the first and second human teammate, respectively, regardless of their statements. Finally, the remote operator plays a sound clip on the robot which states its two truths and a lie:
 \begin{itemize}
  \item I was manufactured in 2003 (truth)
  \item I have traveled outdoors (truth)
  \item I can travel up to two meters per second (lie)
 \end{itemize}
-Participants then guess which statement was a lie, and the remote operator plays a sound clip stating ``I can only travel one meter per second''. The teambuilding activity is now concluded.
+Participants then guess which statement was a lie, and the remote operator plays a sound clip stating ``I can only travel one meter per second''. The team building activity is now concluded.
 
 Note that we avoid anthropomorphizing the robot because this study does not focus on human-like robots. The voice used in every audio clip is a very ``machine-like'' voice.
 \subsection{Primary activity}
+\label{section:primary-activity}
 All participants partake in the primary activity. In this activity, participants are told that there is a blue white board marker hidden in the room somewhere. They are given sixty seconds to find it, with the help of their human partner and the robot. Participants are told the robot will announce ``I found it'' if it finds the marker, however the robot is actually being driven by the remote operator and will not announce if it ``sees'' the marker. In some cases the marker is actually hidden in the room, in other cases the marker is not in the room (thus the participants will run out of time before finding the marker). 
 \subsection{Procedure}
 Participants are recruited from our university library at random and asked if they would participate in a study in human-robot interaction. Two participants at a time are brought into the study room and consented, then introduced to each other and the robot. The participants are only asked to state their name, and the facilitator introduces the robot as ``a Pioneer 3DX''. Participants are asked if they have met each other and are dismissed or re-paired if so until the partners do not know each other. In other words, we control for familiarity between participants. We then tell the participants the robot is capable of finding the blue marker by placing it in front of the robot while the robot operator plays a sound clip stating ``I found it'' from the robot's onboard speaker. Thus the camera is not actually used for detection, the remote operator uses the Wizard of Oz method to create this effect. This was chosen to reduce the probability of technical difficulties in demonstrating the robot's competency.
 
-Participants are then separated and asked to fill out the Godspeed Questionaire [Godspeed reference] with respect to their human teammate and again for their robotic teammate. After completion, they are brought back together in the main study room.
-Half of the participants partake in the teambuilding activity described in Section 3.2. Then, all participants partake in the primary activity described in Section 3.3, and in half of those cases the task is possible and in the other half it is impossible. Thus, there are four studied cells:
+Participants are then separated and asked to fill out the Godspeed Questionaire \cite{Godspeed} with respect to their human teammate and again for their robotic teammate. After completion, they are brought back together in the main study room.
+Half of the participants partake in the team building activity described in Section \ref{section:team-building-activity}. Then, all participants partake in the primary activity described in Section \ref{section:primary-activity}, and in half of those cases the task is possible and in the other half it is impossible. Thus, there are four studied cells:
 \begin{itemize}
- \item Possible task with teambuilding activity
- \item Possible task without teambuilding activity
- \item Impossible task with teambuilding activity
- \item Impossible task without teambuilding activity
+ \item Possible task with team building activity
+ \item Possible task without team building activity
+ \item Impossible task with team building activity
+ \item Impossible task without team building activity
 \end{itemize}
 After finishing the primary activity, participants are separated again and asked to fill out the same Godspeed questionnaire for their human teammate and again for their robotic teammate. After finishing the questionnaire participants are debriefed and dismissed.
 
 \section{Objective Evaluation}
+\label{section:objective-evaluation}
 Each participant filled out the Godspeed Questionnaire for each of their teammates twice: once at the beginning of the study and once at the end of the study. This is designed to evaluate the change in perception of each teammate after being exposed to the test conditions.
 \subsection{Data Analysis Method:}
 The participant responses were post-ordered such that higher numbered scores indicate more human-like and/or positive attributes, such as ``alive'' as opposed to ``dead'' and ``friendly'' as opposed to ``unfriendly''. With this ordering, we analyze each participant's responses for a particular teammate during the pre and post survey, and classify each response as ``more positive'', ``unchanged'', or ``more negative''. We also analyze the net change in a participant's perception of a particular teammate by similarly comparing the average of all scores in each survey.
-\subsection{Human Partner - Without Teambuilding}
-We first inspect the participants' responses regarding their human teammate. For cells with no teambuilding we found the following average results:
+\subsection{Human Partner - Without Team building}
+We first inspect the participants' responses regarding their human teammate. For cells with no team building we found the following average results:
 \begin{itemize}
  \item Three participant's perception of their human partner did not change
  \item Three participant's perception of their human partner became more positive
@@ -167,7 +115,7 @@ These data indicate that the primary task had no noticeable or consistent impact
 
 \begin{table}
 \centering
-\caption{Human Partner - Without Teambuilding}
+\caption{Human Partner - Without Team building}
 \begin{tabular}{|r|r|r|r|r|r|r|r|r|} \hline
 &1.1&1.2&2.1&2.2&3.1&3.2&4.1&4.2\\ \hline
 $\Delta$&0.00&-0.13&0.13&0.00&0.22&-0.04&0.00&0.39 \\ \hline
@@ -175,18 +123,18 @@ $\Delta$&0.00&-0.13&0.13&0.00&0.22&-0.04&0.00&0.39 \\ \hline
 \label{table:HNT}
 \end{table}
 
-\subsection{Human Partner - With Teambuilding}
+\subsection{Human Partner - With Team building}
 For cells with team building we found the following average results:
 \begin{itemize}
  \item One participant's perception of their human partner did not change
  \item Seven participant's perception of their human partner became more positive
  \item Zero participant's perception of their human partner became more negative
 \end{itemize}
-These data indicates that the human's perception of their human partner almost unanimously became more positive after teambuilding, which supports the findings from prior work. Although the task given to participants 8.1 and 8.2 was possible (the marker was in the room) they did not find it in the prescribed amount of time, thus there is insufficient data to determine if the humans' perception of each other changed after the teambuilding and primary task. Table \ref{table:HT} indicates each participant's change in perception of their human teammate in this cell.
+These data indicates that the human's perception of their human partner almost unanimously became more positive after team building, which supports the findings from prior work. Although the task given to participants 8.1 and 8.2 was possible (the marker was in the room) they did not find it in the prescribed amount of time, thus there is insufficient data to determine if the humans' perception of each other changed after the team building and primary task. Table \ref{table:HT} indicates each participant's change in perception of their human teammate in this cell.
 
 \begin{table}
 \centering
-\caption{Human Partner - With Teambuilding}
+\caption{Human Partner - With Team building}
 \begin{tabular}{|r|r|r|r|r|r|r|r|r|} \hline
 &5.1&5.2&6.1&6.2&7.1&7.2&8.1&8.2 \\ \hline
 $\Delta$&0.13&0.00&0.48&0.74&0.22&0.26&0.13&0.39 \\ \hline
@@ -194,8 +142,8 @@ $\Delta$&0.13&0.00&0.48&0.74&0.22&0.26&0.13&0.39 \\ \hline
 \label{table:HT}
 \end{table}
 
-\subsection{Robotic Partner - Without Teambuilding}
-We next inspect the participants' regarding their  robotic teammate. For cells with no teambuilding we found the following average results:
+\subsection{Robotic Partner - Without Team building}
+We next inspect the participants' regarding their  robotic teammate. For cells with no team building we found the following average results:
 \begin{itemize}
  \item Zero participant's perception of their robotic partner did not change
  \item Four participant's perception of their robotic partner became more positive
@@ -205,7 +153,7 @@ These data indicate that that the primary task had no noticeable or consistent i
 
 \begin{table}
 \centering
-\caption{Robot Partner - Without Teambuilding}
+\caption{Robot Partner - Without Team building}
 \begin{tabular}{|r|r|r|r|r|r|r|r|r|} \hline
 &1.1&1.2&2.1&2.2&3.1&3.2&4.1&4.2\\ \hline
 $\Delta$&0.57&-0.48&0.48&0.17&-0.22&-0.17&-0.04&0.04 \\ \hline
@@ -213,18 +161,18 @@ $\Delta$&0.57&-0.48&0.48&0.17&-0.22&-0.17&-0.04&0.04 \\ \hline
 \label{table:RNT}
 \end{table}
 
-\subsection{Robotic Partner - With Teambuilding}
+\subsection{Robotic Partner - With Team building}
 For cells with team building we found the following average results:
 \begin{itemize}
  \item Zero participant's perception of their human partner did not change
  \item Eight participant's perception of their human partner became more positive
  \item Zero participant's perception of their human partner became more negative
 \end{itemize}
-These data strongly indicate that the human's perception of their robotic partner unanimously became more positive after teambuilding. Table \ref{table:RT} indicates each participant's change in perception of their robotic teammate in this cell.
+These data strongly indicate that the human's perception of their robotic partner unanimously became more positive after team building. Table \ref{table:RT} indicates each participant's change in perception of their robotic teammate in this cell.
 
 \begin{table}
 \centering
-\caption{Robot Partner - With Teambuilding}
+\caption{Robot Partner - With Team building}
 \begin{tabular}{|r|r|r|r|r|r|r|r|r|} \hline
 &5.1&5.2&6.1&6.2&7.1&7.2&8.1&8.2 \\ \hline
 $\Delta$&1.04&0.17&0.70&0.52&1.26&0.04&0.35&0.26 \\ \hline
@@ -233,16 +181,22 @@ $\Delta$&1.04&0.17&0.70&0.52&1.26&0.04&0.35&0.26 \\ \hline
 \end{table}
 
 \section{Subjective Evaluation}
+\label{section:subjective-analysis}
 \section{Results}
+\label{section:results}
 \section{Discussion}
-
+\label{section:discussion}
+The results of our experiment support our hypothesis \textbf{H1} that the humans' perception of the robot will improve after performing team building, as exhibited by the unanimous increase (more-positive trend) in robot perception after team building. The humans' perception of the robot increased an average of 0.54 points on a 5-point Likert Scale with team building, compared to just 0.04 points without team building. 
 \section{Limitations and Further Work}
+\label{section:limitations-and-further-work}
 \section{Conclusions}
+\label{section:conclusions}
 
 %\end{document}
 
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgments}
+\label{section:}
 The authors would like to thank the DeLaMare Library for hosting our study and the University of Nevada, Reno Robotics Research Lab for allowing us to use the robotic equipment.
 
 %
@@ -250,20 +204,15 @@ The authors would like to thank the DeLaMare Library for hosting our study and t
 % initial runs of your .tex file to
 % produce the bibliography for the citations in your paper.
 \bibliographystyle{abbrv}
-\bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
-% You must have a proper ".bib" file
-%  and remember to run:
-% latex bibtex latex latex
-% to resolve all references
-%
-% ACM needs 'a single self-contained file'!
-%
-\subsection{References}
-Generated by bibtex from your ~.bib file.  Run latex,
-then bibtex, then latex twice (to resolve references)
-to create the ~.bbl file.  Insert that ~.bbl file into
-the .tex source file and comment out
-the command \texttt{{\char'134}thebibliography}.
+
+\begin{thebibliography}{}
+\bibitem{Rivas} O. Rivas and I. S. Jones, ``Leadership: building a team using structured activities,'' Research in Higher Education Journal, vol. 17, 2012.
+\bibitem{Feil-Seifer} D. J. Feil-Seifer and M. J. Matari\'{c}, ``People-Aware Navigation For Goal-Oriented Behavior Involving a Human Partner,'' in Proceedings of the International Conference on Development and Learning, Frankfurt am Main, Germany, 2011, pp. 1-6.
+\bibitem{Fong} T. Fong, C. Thorpe, and C. Baur, ``Collaboration, Dialogue, and Human-Robot Interaction''. in 10th International Symposium of Robotics Research, Lorne, Victoria, Australia, 2001, p. 255-266.
+\bibitem{Godspeed} C. Bartneck, D. Kuli\'{c}, E. Croft, and S. Zoghbi, ``Measurement instruments for the anthropomorphism, animacy, likeability, perceived intelligence, and perceived safety of robots,'' International Journal of Social Robotics vol. 1, no. 1, 2009, pp. 71-81.
+
+\end{thebibliography}
+
 \balancecolumns
 % That's all folks!
 \end{document}

@@ -47,22 +47,33 @@ We find that humans' perceptions of robots significantly improves after performi
 \keywords{Team building, collaboration}
 
 \section{Introduction}
+\label{introduction}
 Humans often engage in team building activities to improve cooperation between team members and promote positive group identity. For example, \cite{Rivas} reviewed current team building activities and determined that they provided "a sense of unity and cohesiveness" which improved the function of teams.
 
 As the field of robotics develops, humans will be required to work cooperatively with robots on many group tasks. Some researchers have been exploring a variety of aspects of human-robot teamwork, ranging from how a robot should navigate \cite{Feil-Seifer} to dialogue structuring \cite{Fong}. 
 
 When groups work together it is important to promote a collaborative atmosphere between all group members, including mixed groups of humans and robots. Team building is a tool regularly used to promote this collaborative atmosphere. Including robots in team building exercises extends human group interactions to human and robot group interactions. Our study investigates the introduction of team building into a group consisting of two humans and a robot.
 
-The rest of this paper is organized as follows. Section 2 presents previous related work to robot and human team building. Section 3 presents our experimental methodology. Sections 4 and 5 present an objective evaluation and subjective evaluation of our experiment results, respectively. Section 6 presents a complete view of the results of our study. Section 7 presents a discussion of the significance of our results. Section 8 presents the limitations of our study and possible further research based on our experiment. The paper is concluded in Section 9.
-
+The rest of this paper is organized as follows. Section \ref{section:related-work} presents previous related work to robot and human team building. Section \ref{section:aim-of-the-experiment} presents our hypothesis. Section \ref{experimental-methodology} presents our experimental methodology. Sections \ref{section:objective-evaluation} and \ref{section:subjective-analysis} present an objective evaluation and subjective evaluation of our experiment results, respectively. Section \ref{section:results} presents a complete view of the results of our study. Section \ref{section:discussion} presents a discussion of the significance of our results. Section \ref{section:limitations-and-further-work} presents the limitations of our study and possible further research based on our experiment. The paper is concluded in Section \ref{section:conclusions}.
 \section{Related Work}
+\label{section:related-work}
+\section{Aim of the experiment}
+\label{section:aim-of-the-experiment}
+We investigate the interactions between a heterogeneous team of two humans and robot performing one or two simple tasks. The tasks are a team building game, specifically the popular ``Two Truths and One Lie'', and the primary object finding task. Through the experiment we seek to evaluate the following hypotheses:
+\begin{itemize}
+ \item \textbf{H1} A human's perception of a robot will improve after participating in team building with the robot
+ \item \textbf{H2} The human unsuccessful at the primary task will perceive the robot better than a human successful at the primary task will perceive the unsuccessful human.
+\end{itemize}
+
 \section{Experimental Methodology}
+\label{experimental-methodology}
 The experiment is designed to represent a simple task in which teamwork between humans and a robot would increase the probability of the task's success compared to the humans working alone. This is meant to be representative of many real-world activities requiring human and robot teamwork. In this task, the team consisting of two humans and one robot are instructed to locate a particular object in a large room. The participants are told the robot is capable of detecting when it can ``see'' the object with its camera, and thus the robot will be able to help find the object. Participants are subject to a time limit, increasing the difficulty of finding the object.
 \subsection{Materials and Setup}
 The Adept MobileRobotics Pioneer 3DX shown in figure [figure number for picture of robot] is used as the robotic base for the experiment. It is equipped with a SICK LMS 100 Laser Rangefinding for navigation, an Xtion Pro Live for detecting the object it is looking for, and additional computational components. The robot is controlled from a separate computer in a different room by a human (participants are unaware of this Wizard of Oz usage: they are led to believe the robot is navigating autonomously).
 
 The room is a large library study room, set up to be sufficiently cluttered that finding an object takes some time. The object used is a blue whiteboard marker, chosen because it is easily concealable but also easily recognizable to both the humans and the robot's camera due to its bright color. The object is hidden such that the robot would be able to see it.
 \subsection{Team building activity}
+\label{section:team-building-activity}
 Some participants partake in a team building activity with the robot. This activity is the popular ``Two Truths and One Lie'' icebreaker. Each participant tells the group two truths and one lie about themselves, then their human teammate and the robot guess which statement was a lie, in that order. Unknown to participants, the remote human operator actually just plays a sound clip from the robot's onboard speaker which states ``I believe your second/third statement was a lie'' for the first and second human teammate, respectively, regardless of their statements. Finally, the remote operator plays a sound clip on the robot which states its two truths and a lie:
 \begin{itemize}
  \item I was manufactured in 2003 (truth)
@@ -73,12 +84,13 @@ Participants then guess which statement was a lie, and the remote operator plays
 
 Note that we avoid anthropomorphizing the robot because this study does not focus on human-like robots. The voice used in every audio clip is a very ``machine-like'' voice.
 \subsection{Primary activity}
+\label{section:primary-activity}
 All participants partake in the primary activity. In this activity, participants are told that there is a blue white board marker hidden in the room somewhere. They are given sixty seconds to find it, with the help of their human partner and the robot. Participants are told the robot will announce ``I found it'' if it finds the marker, however the robot is actually being driven by the remote operator and will not announce if it ``sees'' the marker. In some cases the marker is actually hidden in the room, in other cases the marker is not in the room (thus the participants will run out of time before finding the marker). 
 \subsection{Procedure}
 Participants are recruited from our university library at random and asked if they would participate in a study in human-robot interaction. Two participants at a time are brought into the study room and consented, then introduced to each other and the robot. The participants are only asked to state their name, and the facilitator introduces the robot as ``a Pioneer 3DX''. Participants are asked if they have met each other and are dismissed or re-paired if so until the partners do not know each other. In other words, we control for familiarity between participants. We then tell the participants the robot is capable of finding the blue marker by placing it in front of the robot while the robot operator plays a sound clip stating ``I found it'' from the robot's onboard speaker. Thus the camera is not actually used for detection, the remote operator uses the Wizard of Oz method to create this effect. This was chosen to reduce the probability of technical difficulties in demonstrating the robot's competency.
 
-Participants are then separated and asked to fill out the Godspeed Questionaire [Godspeed reference] with respect to their human teammate and again for their robotic teammate. After completion, they are brought back together in the main study room.
-Half of the participants partake in the team building activity described in Section 3.2. Then, all participants partake in the primary activity described in Section 3.3, and in half of those cases the task is possible and in the other half it is impossible. Thus, there are four studied cells:
+Participants are then separated and asked to fill out the Godspeed Questionaire \cite{Godspeed} with respect to their human teammate and again for their robotic teammate. After completion, they are brought back together in the main study room.
+Half of the participants partake in the team building activity described in Section \ref{section:team-building-activity}. Then, all participants partake in the primary activity described in Section \ref{section:primary-activity}, and in half of those cases the task is possible and in the other half it is impossible. Thus, there are four studied cells:
 \begin{itemize}
  \item Possible task with team building activity
  \item Possible task without team building activity
@@ -88,6 +100,7 @@ Half of the participants partake in the team building activity described in Sect
 After finishing the primary activity, participants are separated again and asked to fill out the same Godspeed questionnaire for their human teammate and again for their robotic teammate. After finishing the questionnaire participants are debriefed and dismissed.
 
 \section{Objective Evaluation}
+\label{section:objective-evaluation}
 Each participant filled out the Godspeed Questionnaire for each of their teammates twice: once at the beginning of the study and once at the end of the study. This is designed to evaluate the change in perception of each teammate after being exposed to the test conditions.
 \subsection{Data Analysis Method:}
 The participant responses were post-ordered such that higher numbered scores indicate more human-like and/or positive attributes, such as ``alive'' as opposed to ``dead'' and ``friendly'' as opposed to ``unfriendly''. With this ordering, we analyze each participant's responses for a particular teammate during the pre and post survey, and classify each response as ``more positive'', ``unchanged'', or ``more negative''. We also analyze the net change in a participant's perception of a particular teammate by similarly comparing the average of all scores in each survey.
@@ -168,16 +181,24 @@ $\Delta$&1.04&0.17&0.70&0.52&1.26&0.04&0.35&0.26 \\ \hline
 \end{table}
 
 \section{Subjective Evaluation}
+\label{section:subjective-analysis}
 \section{Results}
+\label{section:results}
 \section{Discussion}
-
+\label{section:discussion}
+The results of our experiment support our hypothesis \textbf{H1} that the humans' perception of the robot will improve after performing team building, as exhibited by the unanimous increase (more-positive trend) in robot perception after team building. The humans' perception of the robot increased an average of 0.54 points on a 5-point Likert Scale with team building, compared to just 0.04 points without team building.
+The results fail to support our hypothesis \textbf{H2} that the human unsuccessful at the primary task will perceive the robot better than a human successful at the primary task will perceive the unsuccessful human. This is partially due to a lack of data: one of the cases which should have yielded data related to this hypothesis failed when the participants did not find the object even though it was in the room(case 8). Section \ref{section:limitations-and-further-work} provides suggestions for further study on this hypothesis.
 \section{Limitations and Further Work}
+\label{section:limitations-and-further-work}
+In order to confirm \textbf{H2} a significant number of participants need to be tested in that cell. Thus, it would be more effective for a future study to focus entirely on this cell to get a broader look at the range of opinions of participants.
 \section{Conclusions}
+\label{section:conclusions}
 
 %\end{document}
 
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgments}
+\label{section:}
 The authors would like to thank the DeLaMare Library for hosting our study and the University of Nevada, Reno Robotics Research Lab for allowing us to use the robotic equipment.
 
 %
@@ -187,9 +208,10 @@ The authors would like to thank the DeLaMare Library for hosting our study and t
 \bibliographystyle{abbrv}
 
 \begin{thebibliography}{}
-\bibitem{Rivas} O. Rivas and I. S. Jones, "Leadership: building a team using structured activities," Research in Higher Education Journal, vol. 17, 2012.
-\bibitem{Feil-Seifer} D. J. Feil-Seifer and M. J. Matarić, "People-Aware Navigation For Goal-Oriented Behavior Involving a Human Partner," in Proceedings of the International Conference on Development and Learning, Frankfurt am Main, Germany, 2011, pp. 1-6.
-\bibitem{Fong} T. Fong, C. Thorpe, and C. Baur, “Collaboration, Dialogue, and Human-Robot Interaction”. in 10th International Symposium of Robotics Research, Lorne, Victoria, Australia, 2001, p. 255-266.
+\bibitem{Rivas} O. Rivas and I. S. Jones, ``Leadership: building a team using structured activities,'' Research in Higher Education Journal, vol. 17, 2012.
+\bibitem{Feil-Seifer} D. J. Feil-Seifer and M. J. Matari\'{c}, ``People-Aware Navigation For Goal-Oriented Behavior Involving a Human Partner,'' in Proceedings of the International Conference on Development and Learning, Frankfurt am Main, Germany, 2011, pp. 1-6.
+\bibitem{Fong} T. Fong, C. Thorpe, and C. Baur, ``Collaboration, Dialogue, and Human-Robot Interaction''. in 10th International Symposium of Robotics Research, Lorne, Victoria, Australia, 2001, p. 255-266.
+\bibitem{Godspeed} C. Bartneck, D. Kuli\'{c}, E. Croft, and S. Zoghbi, ``Measurement instruments for the anthropomorphism, animacy, likeability, perceived intelligence, and perceived safety of robots,'' International Journal of Social Robotics vol. 1, no. 1, 2009, pp. 71-81.
 
 \end{thebibliography}
 
