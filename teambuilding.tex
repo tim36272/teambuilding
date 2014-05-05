@@ -142,25 +142,109 @@ The Adept MobileRobotics Pioneer 3DX shown in figure [figure number for picture 
 The room is a large library study room, set up to be sufficiently cluttered that finding an object takes some time. The object used is a blue whiteboard marker, chosen because it is easily concealable but also easily recognizable to both the humans and the robot's camera due to its bright color. The object is hidden such that the robot would be able to see it.
 \subsection{Teambuilding activity}
 Some participants partake in a team building activity with the robot. This activity is the popular ``Two Truths and One Lie'' icebreaker. Each participant tells the group two truths and one lie about themselves, then their human teammate and the robot guess which statement was a lie, in that order. Unknown to participants, the remote human operator actually just plays a sound clip from the robot's onboard speaker which states ``I believe your second/third statement was a lie'' for the first and second human teammate, respectively, regardless of their statements. Finally, the remote operator plays a sound clip on the robot which states its two truths and a lie:
-I was manufactured in 2003 (truth)
-I have traveled outdoors (truth)
-I can travel up to two meters per second (lie)
+\begin{itemize}
+ \item I was manufactured in 2003 (truth)
+ \item I have traveled outdoors (truth)
+ \item I can travel up to two meters per second (lie)
+\end{itemize}
 Participants then guess which statement was a lie, and the remote operator plays a sound clip stating ``I can only travel one meter per second''. The teambuilding activity is now concluded.
+
+Note that we avoid anthropomorphizing the robot because this study does not focus on human-like robots. The voice used in every audio clip is a very ``machine-like'' voice.
 \subsection{Primary activity}
 All participants partake in the primary activity. In this activity, participants are told that there is a blue white board marker hidden in the room somewhere. They are given sixty seconds to find it, with the help of their human partner and the robot. Participants are told the robot will announce ``I found it'' if it finds the marker, however the robot is actually being driven by the remote operator and will not announce if it ``sees'' the marker. In some cases the marker is actually hidden in the room, in other cases the marker is not in the room (thus the participants will run out of time before finding the marker). 
 \subsection{Procedure}
 Participants are recruited from our university library at random and asked if they would participate in a study in human-robot interaction. Two participants at a time are brought into the study room and consented, then introduced to each other and the robot. The participants are only asked to state their name, and the facilitator introduces the robot as ``a Pioneer 3DX''. Participants are asked if they have met each other and are dismissed or re-paired if so until the partners do not know each other. In other words, we control for familiarity between participants. We then tell the participants the robot is capable of finding the blue marker by placing it in front of the robot while the robot operator plays a sound clip stating ``I found it'' from the robot's onboard speaker. Thus the camera is not actually used for detection, the remote operator uses the Wizard of Oz method to create this effect. This was chosen to reduce the probability of technical difficulties in demonstrating the robot's competency.
+
 Participants are then separated and asked to fill out the Godspeed Questionaire [Godspeed reference] with respect to their human teammate and again for their robotic teammate. After completion, they are brought back together in the main study room.
 Half of the participants partake in the teambuilding activity described in Section 3.2. Then, all participants partake in the primary activity described in Section 3.3, and in half of those cases the task is possible and in the other half it is impossible. Thus, there are four studied cells:
 \begin{itemize}
-\item Possible task with teambuilding activity
-\item Possible task without teambuilding activity
-\item Impossible task with teambuilding activity
-\item Impossible task without teambuilding activity
+ \item Possible task with teambuilding activity
+ \item Possible task without teambuilding activity
+ \item Impossible task with teambuilding activity
+ \item Impossible task without teambuilding activity
 \end{itemize}
 After finishing the primary activity, participants are separated again and asked to fill out the same Godspeed questionnaire for their human teammate and again for their robotic teammate. After finishing the questionnaire participants are debriefed and dismissed.
 
 \section{Objective Evaluation}
+Each participant filled out the Godspeed Questionnaire for each of their teammates twice: once at the beginning of the study and once at the end of the study. This is designed to evaluate the change in perception of each teammate after being exposed to the test conditions.
+\subsection{Data Analysis Method:}
+The participant responses were post-ordered such that higher numbered scores indicate more human-like and/or positive attributes, such as ``alive'' as opposed to ``dead'' and ``friendly'' as opposed to ``unfriendly''. With this ordering, we analyze each participant's responses for a particular teammate during the pre and post survey, and classify each response as ``more positive'', ``unchanged'', or ``more negative''. We also analyze the net change in a participant's perception of a particular teammate by similarly comparing the average of all scores in each survey.
+\subsection{Human Partner - Without Teambuilding}
+We first inspect the participants' responses regarding their human teammate. For cells with no teambuilding we found the following average results:
+\begin{itemize}
+ \item Three participant's perception of their human partner did not change
+ \item Three participant's perception of their human partner became more positive
+ \item Two participant's perception of their human partner became more negative
+\end{itemize}
+These data indicate that the primary task had no noticeable or consistent impact on participants' perception of each other. Interestingly, this also indicates that there was no significant change in participants' perceptions of each other based on whether they found the marker or not.  Table \ref{table:HNT} indicates each participant's change in perception of their human teammate for this cell.
+
+\begin{table}
+\centering
+\caption{Human Partner - Without Teambuilding}
+\begin{tabular}{|r|r|r|r|r|r|r|r|r|} \hline
+&1.1&1.2&2.1&2.2&3.1&3.2&4.1&4.2\\ \hline
+$\Delta$&0.00&-0.13&0.13&0.00&0.22&-0.04&0.00&0.39 \\ \hline
+\end{tabular}
+\label{table:HNT}
+\end{table}
+
+\subsection{Human Partner - With Teambuilding}
+For cells with team building we found the following average results:
+\begin{itemize}
+ \item One participant's perception of their human partner did not change
+ \item Seven participant's perception of their human partner became more positive
+ \item Zero participant's perception of their human partner became more negative
+\end{itemize}
+These data indicates that the human's perception of their human partner almost unanimously became more positive after teambuilding, which supports the findings from prior work. Although the task given to participants 8.1 and 8.2 was possible (the marker was in the room) they did not find it in the prescribed amount of time, thus there is insufficient data to determine if the humans' perception of each other changed after the teambuilding and primary task. Table \ref{table:HT} indicates each participant's change in perception of their human teammate in this cell.
+
+\begin{table}
+\centering
+\caption{Human Partner - With Teambuilding}
+\begin{tabular}{|r|r|r|r|r|r|r|r|r|} \hline
+&5.1&5.2&6.1&6.2&7.1&7.2&8.1&8.2 \\ \hline
+$\Delta$&0.13&0.00&0.48&0.74&0.22&0.26&0.13&0.39 \\ \hline
+\end{tabular}
+\label{table:HT}
+\end{table}
+
+\subsection{Robotic Partner - Without Teambuilding}
+We next inspect the participants' regarding their  robotic teammate. For cells with no teambuilding we found the following average results:
+\begin{itemize}
+ \item Zero participant's perception of their robotic partner did not change
+ \item Four participant's perception of their robotic partner became more positive
+ \item Four participant's perception of their robotic partner became more negative
+\end{itemize}
+These data indicate that that the primary task had no noticeable or consistent impact on the participants' perception of the robot. Table \ref{table:RNT} indicates each participant's change in perception of their robotic teammate in this cell.
+
+\begin{table}
+\centering
+\caption{Robot Partner - Without Teambuilding}
+\begin{tabular}{|r|r|r|r|r|r|r|r|r|} \hline
+&1.1&1.2&2.1&2.2&3.1&3.2&4.1&4.2\\ \hline
+$\Delta$&0.57&-0.48&0.48&0.17&-0.22&-0.17&-0.04&0.04 \\ \hline
+\end{tabular}
+\label{table:RNT}
+\end{table}
+
+\subsection{Robotic Partner - With Teambuilding}
+For cells with team building we found the following average results:
+\begin{itemize}
+ \item Zero participant's perception of their human partner did not change
+ \item Eight participant's perception of their human partner became more positive
+ \item Zero participant's perception of their human partner became more negative
+\end{itemize}
+These data strongly indicate that the human's perception of their robotic partner unanimously became more positive after teambuilding. Table \ref{table:RT} indicates each participant's change in perception of their robotic teammate in this cell.
+
+\begin{table}
+\centering
+\caption{Robot Partner - With Teambuilding}
+\begin{tabular}{|r|r|r|r|r|r|r|r|r|} \hline
+&5.1&5.2&6.1&6.2&7.1&7.2&8.1&8.2 \\ \hline
+$\Delta$&1.04&0.17&0.70&0.52&1.26&0.04&0.35&0.26 \\ \hline
+\end{tabular}
+\label{table:RT}
+\end{table}
+
 \section{Subjective Evaluation}
 \section{Results}
 \section{Discussion}
